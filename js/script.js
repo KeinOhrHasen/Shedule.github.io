@@ -2,7 +2,6 @@ let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 
 function show_day(clicked_id){
-  // let choosed_day = currentTarget.className;
   let currentDay = +clicked_id[1];
   let nextDay = currentDay<7 ? currentDay + 1 : 1;
 
@@ -43,4 +42,8 @@ function switch_bg_br(){
 function switch_bg_ar(){
   document.getElementById('finish_br').style.background = "#ccc"
   document.getElementById('finish_ar').style.background = "#2196F3"
+}
+
+function say_success(){
+    alert("Your personal shedul successfully saved !")
 }
