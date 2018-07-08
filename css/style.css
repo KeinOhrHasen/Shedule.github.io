@@ -267,14 +267,10 @@ footer{
 .top_banner{
   width: 100%;
   max-width: 1070px;
-  background-color: #0A1133;
-  opacity: 0.7;
-  top:0;
+  background-color: #0A1133CC;
   display:flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-
 }
 
 .banner_logo{
