@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>Nice Try</title>
+  <title>Nice Try 2.0</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <!-- <link rtylesheet" href="https://mel="saxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/reset.css">
 
   <link rel="stylesheet" href="css/tougle_form.css">
@@ -38,46 +37,57 @@
 
   <main>
     <div class="personal_info">
-      <img src="img/logo.png" alt="photo authorizet user" class="person_photo">
-      <p class="f_s_name       cell">Christopher P. Cannon MD</p>
-      <p class="specialty      cell">Specialty:</p>
-      <p class="speci_name     cell">Orthopedics</p>
-      <p class="location       cell">Location:</p>
-      <p class="loc_name       cell">Madison Center</p>
-      <p class="interests      cell">Clinical interests:</p>
-      <p class="interests_name cell">General Orthopedics, Bones</p>
+      <div class="photo_and_name">
+        <img src="img/logo.png" alt="photo authorizet user" class="person_photo">
+        <p class="f_s_name       ">Chris P. Cannon MD</p>
+      </div>
+
+      <div class="specialty_wrp">
+        <p class="specialty      ">Specialty:</p>
+        <p class="speci_name     cell">Orthopedics</p>
+      </div>
+      <div class="location_wrp">
+        <p class="location       ">Location:</p>
+        <p class="loc_name       cell">Madison Center</p>
+      </div>
+      <div class="interests_wrp">
+        <p class="interests      ">Clinical interests:</p>
+        <p class="interests_name cell">General Orthopedics, Bones</p>
+
+      </div>
+
       <p class="short_pers_info">Dr. Cannon has expertise in musculoskeletal tumor surgery (benign and malignant tumors of the soft tissues and bones), total joint replacements (hips and knees), partial knee replacements (MAKOplasty® and the Biomet Oxford), ACL reconstruction and arthroscopic surgery.</p>
     </div>
     <div class="wrp_week">
       <div class="week_box">
+        <a href="" class="instruction_for_shedule">Working Shedule<span class="sh_instr_text">Choose a day for when you want to work</span></a>
         <a href="" class="month day">Month<span class="date">June</span></a>
 
         <a href="#win1" id='d1' class="day" onclick="show_day(this.id)">
       Monday  <span class="date">01</span>
         </a>
         <a href="#win1" id='d2' class="day" onclick="show_day(this.id)">
-      Tuesday<span class="date">01</span>
-        </a>
+      Tuesday<span class="date">02</span>
         </a>
         <a href="#win1" id='d3' class="day" onclick="show_day(this.id)">
-      Wednesday<span class="date">01</span>
+      Wednesday<span class="date">03</span>
         </a>
         <a href="#win1" id='d4' class="day" onclick="show_day(this.id)">
-      Thursday<span class="date">01</span>
+      Thursday<span class="date">04</span>
         </a>
         <a href="#win1" id='d5' class="day" onclick="show_day(this.id)">
-      Friday<span class="date">01</span>
+      Friday<span class="date">05</span>
         </a>
         <a href="#win1" id='d6' class="day" onclick="show_day(this.id)">
-      Saturday<span class="date">01</span>
+      Saturday<span class="date">06</span>
         </a>
         <a href="#win1" id='d7' class="day" onclick="show_day(this.id)">
-      Sunday<span class="date">01</span>
+      Sunday<span class="date">07</span>
         </a>
-        <ul class="backet" id="dates_backet"></ul>
+        <ul class="backet" id="dates_backet">Basket</ul>
 
 
-  <a href="" class="btn_save_shedule">Save Shedule</a>
+  <a href="" id="btn_save_shedule">Save Shedule</a>
       </div>
 
   </div>
@@ -93,8 +103,8 @@
           <div class="shd_form_box">
             <div class="form_start">
               <div id="start" class="form_title_1"></div>
-              <div class="form_label_hh">hh</div>
-              <div class="form_label_am_pm">AM | PM</div>
+              <div class="form_label_hh labels">HH</div>
+              <div class="form_label_am_pm labels">AM | PM</div>
               <input id='f_input_1' type="text" name="time_from" value="" maxlength="2" placeholder="...">
               <div class="tougle_start">
                 <label class="switch">
@@ -112,8 +122,8 @@
                 <div id="finish_br" onclick="switch_bg_br()"></div>
                 <div id="finish_ar" onclick="switch_bg_ar()"></div>
               </div>
-              <div class="form_label_hh">hh</div>
-              <div class="form_label_am_pm">AM | PM</div>
+              <div class="form_label_hh labels">HH</div>
+              <div class="form_label_am_pm labels">AM | PM</div>
               <input id='f_input_2' type="text" name="time_from" value="" maxlength="2" placeholder="...">
               <div class="tougle_end">
                 <label class="switch">
