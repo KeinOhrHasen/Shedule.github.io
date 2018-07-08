@@ -36,11 +36,11 @@ function write_date(){
 }
 
 function switch_bg_br(){
-  document.getElementById('finish_ar').style.background = "rgb(31, 139, 136)"
-  document.getElementById('finish_br').style.background = "rgb(64, 48, 218)"
+  document.getElementById('finish_ar').style.background = "#ccc"
+  document.getElementById('finish_br').style.background = "#2196F3"
 }
 
 function switch_bg_ar(){
-  document.getElementById('finish_br').style.background = "rgb(31, 139, 136)"
-  document.getElementById('finish_ar').style.background = "rgb(64, 48, 218)"
+  document.getElementById('finish_br').style.background = "#ccc"
+  document.getElementById('finish_ar').style.background = "#2196F3"
 }
