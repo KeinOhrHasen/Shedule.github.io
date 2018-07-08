@@ -4,63 +4,23 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 200px 50px; */
-    /* grid-gap: 20px; */
   }
 
-  /* .day_1{
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .day_2{
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .day_3{
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .day_4{
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .day_5{
-    grid-column: 1;
-    grid-row: 3;
-  }
-  .day_6{
-    grid-column: 2;
-    grid-row: 3;
-  }
-  .day_7{
-    grid-column: 1;
-    grid-row: 4;
-  }
-  .backet{
-    grid-column: 1/2;
-    grid-row: 5;
-    width: 100%;
-  } */
 
   .day,
   .backet,
-  .btn_save_shedule{
+  #btn_save_shedule{
     width: 100%;
     margin: 20px;
-
   }
 
-  .shd_form_box{
-    /* width: 100%; */
-  }
   #shedule_form {
     display: flex;
     flex-direction: column;
     width: 90%;
     height: auto;
   }
+
   .form_start,
   .form_end{
     width: 250px;
@@ -74,6 +34,7 @@
 .fa-arrow-alt-circle-right{
   transform: rotate(90deg);
 }
+
 .dm-cell{
   padding: 20px;
   width: 100%;
@@ -83,6 +44,25 @@
     width: 100%;
 }
 
+.short_pers_info{
+  display: none;
+}
+
+.personal_info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  grid-gap: 10px;
+  background-color: #D4F7D4;
+  justify-content: center;
+}
+.photo_and_name{
+  grid-column: 1;
+  grid-row: 1/4;
+  width: 100%;
+  }
+}
+
 
 @media all and (max-width:460px) {
   .form_start,
@@ -90,10 +70,4 @@
     width: 100%;
   }
 
-}
-
-@media all and (max-width:600px) {
-  .social{
-    display: none;
-  }
 }
