@@ -1,0 +1,298 @@
+body{
+  font-family:arial,sans-serif;
+}
+
+.week_box{
+  overflow:hidden;
+  padding:3em;
+}
+
+.day{
+  background:#ffc;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+
+.backet:hover,
+.backet:focus,
+.day:hover,
+.day:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  position:relative;
+  z-index:5;
+}
+
+
+/* ===========Body Elements========================== */
+
+body{
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+
+header{
+  height: 280px;
+  background-color: #559A53;
+  background-image: url("../img/doc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main{
+background-color: #559E54;
+}
+
+footer{
+  height: 50px;
+  background-color: #0A1133;
+}
+
+/* -------------------Shedule----------------------- */
+.wrp_week{
+  background-image: url("../img/medicblockchain.jpg");
+  background-position: center;
+  background-repeat: repeat;
+}
+.week_box{
+  background-color: #3cba80cc;
+  max-width: 700px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 50px;
+  grid-gap: 15px;
+  padding: 30px 10px 30px 10px;
+}
+
+/* -----grid-cels */
+.instruction_for_shedule{
+  grid-column: 1/-1;
+  grid-row: 1;
+  border-radius: 10px;
+  background-color: rgb(81, 187, 97);
+  font-size: 27px;
+  text-align: center;
+}
+
+.sh_instr_text{
+  display: block;
+  font-size: 18px;
+  padding: 10px;
+
+}
+
+#d1{
+  grid-column: 1;
+  grid-row: 2;
+}
+#d2{
+  grid-column: 2;
+  grid-row: 2;
+}
+#d3{
+  grid-column: 2;
+  grid-row: 3;
+}
+#d4{
+  grid-column: 3;
+  grid-row: 3;
+}
+#d5{
+  grid-column: 3;
+  grid-row: 4;
+}
+#d6{
+  grid-column: 4;
+  grid-row: 4;
+}
+#d7{
+  grid-column: 4;
+  grid-row: 5;
+}
+.month{
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.backet{
+  grid-column: 1/2;
+  grid-row: 4/6;
+  width: 120px;
+  height: 200px;
+  background-color: white;
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  overflow-y: scroll;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.backet li{
+  font-size: 20px;
+  color:rgb(13, 151, 172);
+}
+
+#btn_save_shedule{
+  grid-column: 1/-1;
+  grid-row: 6;
+  background-color: rgb(7, 107, 192);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin-right: 3%;
+  color:#fff;
+}
+
+#btn_save_shedule:hover{
+    color:#f08211;
+
+}
+
+.day{
+  display: block;
+  text-decoration: none;
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+  align-self: center;
+  margin: 0 auto
+}
+
+.day .date{
+  display: block;
+  width: 50px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bolder;
+  color:#000;
+
+}
+
+
+/* -------------personal_info--------------------- */
+
+.personal_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #D4F7D4;
+}
+
+
+.person_photo{
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+.photo_and_name{
+  grid-column: 1;
+  grid-row: 1/4;
+  width: 150px;
+}
+
+.instruction_for_shedule{
+  color: rgb(32, 49, 158);
+}
+
+.f_s_name{
+  text-align: center
+}
+
+.specialty_wrp{
+  grid-column: 2;
+  grid-row: 2;
+    padding: 20px;
+}
+.location_wrp{
+  grid-column: 3;
+  grid-row: 2;
+    padding: 20px;
+}
+.interests_wrp{
+  grid-column: 4;
+  grid-row: 2;
+    padding: 20px;
+}
+
+.short_pers_info{
+  grid-column: 2/-1;
+  grid-row: 1;
+  /* align-self: center; */
+  padding: 20px;
+}
+
+.photo_and_name{
+  font-size: 20px;
+  color:#091034;
+}
+
+.specialty_wrp,
+.location_wrp,
+.interests_wrp{
+  font-size: 25px;
+  color:#091034;
+
+}
+
+
+.specialty_wrp p + p,
+.location_wrp p + p,
+.interests_wrp p + p{
+  font-size: 16px;
+    border-top: 2px solid rgb(35, 104, 225);
+}
+
+.cell{
+  padding: 10px 0;
+  color:rgb(233, 164, 28);
+}
+
+/* ================BANNER TOP================ */
+.top_banner{
+  width: 100%;
+  max-width: 1070px;
+  background-color: #0A1133;
+  opacity: 0.7;
+  top:0;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+
+}
+
+.banner_logo{
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.quote{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.97);
+}
+
+.social{
+    width: 100px;
+}
+.social a{
+  font-size: 30px;
+  padding: 10px
+}

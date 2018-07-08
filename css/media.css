@@ -1,0 +1,73 @@
+@media all and (max-width:576px) {
+  .week_box{
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .day,
+  .backet,
+  #btn_save_shedule{
+    width: 100%;
+    margin: 20px;
+  }
+
+  #shedule_form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .form_start,
+  .form_end{
+    width: 250px;
+  }
+
+  .shd_form_box{
+    height: auto;
+    display:flex;
+    flex-direction: column;
+  }
+.fa-arrow-alt-circle-right{
+  transform: rotate(90deg);
+}
+
+.dm-cell{
+  padding: 20px;
+  width: 100%;
+
+}
+.btn_confirm{
+    width: 100%;
+}
+
+.short_pers_info{
+  display: none;
+}
+
+.personal_info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  grid-gap: 10px;
+  background-color: #D4F7D4;
+  justify-content: center;
+}
+.photo_and_name{
+  grid-column: 1;
+  grid-row: 1/4;
+  width: 100%;
+  }
+}
+
+
+@media all and (max-width:460px) {
+  .form_start,
+  .form_end{
+    width: 100%;
+  }
+
+}
